@@ -12,3 +12,6 @@ Aura.UI
 https://github.com/PieroCastillo/Aura.UI
 Waves.UI.Avalonia
 https://github.com/waves-framework/waves.ui.avalonia 
+
+Layouts Newsletter Post:
+https://store.steampowered.com/news/app/867210?emclan=103582791470244880&emgid=3524658636187315955
