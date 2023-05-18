@@ -10,5 +10,9 @@ Avalonia Documentation: https://docs.avaloniaui.net/
 
 How to Install
 
+0. Visual Studio
+    -.NET 4.0+
+    -.NET Core
+
 1. Install Avalonia: https://docs.avaloniaui.net/docs/getting-started
     -run dotnet new install Avalonia.Templates
