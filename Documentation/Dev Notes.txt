@@ -1,0 +1,17 @@
+UI Libraries for Avalonia:
+
+FluentAvalonia (Windows 11 inspired)
+https://github.com/amwx/FluentAvalonia
+SukiUI
+https://github.com/kikipoulet/SukiUI
+Material.Avalonia
+https://github.com/AvaloniaCommunity/Material.Avalonia
+Citrus.Avalonia
+https://github.com/AvaloniaUI/Citrus.Avalonia
+Aura.UI
+https://github.com/PieroCastillo/Aura.UI
+Waves.UI.Avalonia
+https://github.com/waves-framework/waves.ui.avalonia 
+
+Layouts Newsletter Post:
+https://store.steampowered.com/news/app/867210?emclan=103582791470244880&emgid=3524658636187315955
