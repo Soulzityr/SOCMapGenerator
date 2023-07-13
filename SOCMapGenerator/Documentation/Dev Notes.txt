@@ -1,0 +1,4 @@
+Order of Features:
+
+1. Create the input form
+2. Hook it up to controller

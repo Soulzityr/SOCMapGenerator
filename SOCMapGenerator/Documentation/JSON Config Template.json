@@ -1,0 +1,50 @@
+{
+    "type": "random-map-generator-layout",
+    "name": "Practice Layout",
+    "description": "A test of the practice layout",
+    "version": "1.0.0",
+    "playerCount": 2,
+    "size": 75, //keep this number uneven
+    "layouts": [
+        {
+            "name": "Layout 1", //internal ID
+            "nodes": [
+                {
+                    "id": 1, //must be unique
+                    "point": {"x": [0, 0.2], "y": [0.2, 0.8]}, //1. how to choose these coordinates,
+                                                              //can we not fill them and they'll be random?
+                    "fill": 0.1, //fill 10% of the map
+                    "player": 1,
+                    "group": 1, //2. makes sure things are spawned in grouped regions? any explanation to this?
+                    "region_identifier": ["player_start"],
+                            //the following identifiers: default, fill, player_start, player_support, player_dwelling,
+                            //center, treasure_high, treasure_medium, spire
+                    "primary_building": ["AgnosticTown"], //a town should be spawned
+                    "isClaimed": true, //town should belong to player 1 from the start
+                    "children": [
+                        {
+                            "id": 100,
+                            "fill": 0, //0 results in small region
+                            "parentGrowthBeforeBirth": 1,
+                            "growth": 101,
+                            "guardChance": 1, //100% chance automatic connection will be guarded
+                            "difficulty": [5000, 6000], //gold values between these values
+                            "region_identifier": ["treasure_medium"],
+                            "spawnChance": 1
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+
+{
+    "Questions": [
+        "Points: How to choose coordinates to set points of nodes? Is this required?",
+        "Region_Identifier: is there a description of each of these? what is player_support vs player_dwelling, center...",
+        "Primary_Building: How many can we throw in this list? How does it fit it all? Can we get a brief description of what things
+            are like AgnosticTown?",
+        "parentGrowthBeforeBirth: wait for parent to grow full before spawning?",
+    ]
+}
