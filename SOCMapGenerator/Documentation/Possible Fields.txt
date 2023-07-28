@@ -1,8 +1,6 @@
 Region Identifier:
 default, fill, player_start, player_support, player_dwelling, center, treasure_high, treasure_medium, spire
 
-
-
 Primary Building: 
 AbandonedCart
 AgnosticTown, AncientAmber, AncientAmberMine, AncientRuins, ArcaneSpire
