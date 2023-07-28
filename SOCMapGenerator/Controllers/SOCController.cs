@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using SOCMapGenerator.Models;
 
 namespace SOCMapGenerator.Controllers
 {
@@ -14,6 +15,24 @@ namespace SOCMapGenerator.Controllers
 		public IActionResult Index()
 		{
 			return View();
+		}
+
+		[HttpPost]
+		[ValidateAntiForgeryToken]
+		public IActionResult Create(SOCMapTemplateCreate model)
+		{
+			try
+			{
+				if (ModelState.IsValid)
+				{
+					return View("Index");
+				}
+			}
+			catch (Exception ex)
+			{
+				throw;
+			}
+			return View("Index");
 		}
 	}
 }

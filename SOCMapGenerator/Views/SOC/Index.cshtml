@@ -7,12 +7,12 @@
     <h1 class="display-4">SOC Map Generator</h1>
     <p>Work in Progress</p>
     <section>
-        <form method="post">
+        <form method="post" asp-controller="SOC" asp-action="Create">
             <h2>Creating a Map Template</h2>
             <p><label for="mapName">Map Name: </label> <input asp-for="Name"/></p>
             <p><label for="description">Description: </label> <input type="text" id="description" name="Description" asp-for="Description" /></p>
             <p><label for="playerCount">Player Count: </label> <input type="number" id="playerCount" name="PlayerCount" asp-for="PlayerCount"/></p>
-            <button>Submit</button>
+            <button type="submit" value="Create">Submit</button>
         </form>
     </section>
 </div>
