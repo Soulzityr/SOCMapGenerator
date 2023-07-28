@@ -21,6 +21,11 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapControllerRoute(
+				name: "Songs of Conquest",
+				pattern: "songs-of-conquest/{action=Index}/{id?}",
+				defaults: new { controller = "SOC", action = "Index" });
+
+app.MapControllerRoute(
 	name: "default",
 	pattern: "{controller=Home}/{action=Index}/{id?}");
 
